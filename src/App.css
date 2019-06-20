@@ -19,5 +19,9 @@
 }
 
 #hit{
-    background-color: blue;
+    background-image: url('./dirt.png');
+}
+
+#treasure{
+    background-image: url('./treasure.png')
 }
