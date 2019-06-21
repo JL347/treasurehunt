@@ -13,8 +13,7 @@ class Square extends Component {
     handleClick = () => {
         if (this.props.treasure === this.props.index){
             this.setState({square: 'treasure', defaultQuestionMark: ''})
-            alert("You win!")
-            window.location.reload()
+            alert("You win! Select new game!")
         } else {
             this.setState({square: 'hit', defaultQuestionMark: ''})
             alert("Try again!")

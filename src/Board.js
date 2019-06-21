@@ -27,16 +27,19 @@ class Board extends Component {
 
         return (
             <div>
+                <h1 className = 'title'>Treasure Hunt</h1>
                 <div className = 'board' onClick={this.useGuess}>
                 {this.state.spaces.map((value, index) =>
                     <Square index={index} treasure={this.state.treasure}/>
                 )}
                 </div>
-                <div>
-                    Turns remaining: {this.state.guesses}
+                <br></br>
+                <div className = 'turns'>
+                    Remaining Energy: {this.state.guesses} guesses
                 </div>
                 <div>
-                    <button onClick= {this.onClickReload}>
+                <br></br>
+                    <button className = 'button' onClick= {this.onClickReload}>
                     New Game
                     </button>
                 </div>
